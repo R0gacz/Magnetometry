@@ -31,7 +31,7 @@ plt.plot(HT_mu0, M_emu, ".",color = "black", markersize = 0.5)
 plt.grid()
 plt.xlabel("Natężenie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja M [emu]")
-plt.savefig("Tb_dane")
+plt.savefig("plots/Tb_dane")
 
 
 #M(Hmu0) [A/m]
@@ -45,7 +45,7 @@ plt.plot(HT_mu0, MH_Am, ".", color = "black", markersize = 0.5)
 plt.grid()
 plt.xlabel("Natężenie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja próbki M [A/m]")
-plt.savefig("Tb_SI")
+plt.savefig("plots/Tb_SI")
 
 
 
@@ -77,7 +77,7 @@ plt.grid()
 plt.legend()
 plt.xlabel("Natężenie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja próbki M [A/m]")
-plt.savefig("Tb_interp")
+plt.savefig("plots/Tb_interp")
 
 plt.figure(dpi=200)
 plt.plot(HT_mu0, MH_Am, ".", color = "black", ms = 0.5, label = "Dane")
@@ -92,7 +92,7 @@ plt.xlabel("Natężenie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja próbki M [A/m]")
 plt.xlim([-0.03, 0.03])
 plt.ylim([-30000, 30000])
-plt.savefig("Tb_max")
+plt.savefig("plots/Tb_max")
 
 # Lower hysteresis interpolation
 
@@ -130,7 +130,7 @@ plt.xlabel("Natężenie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja próbki M [A/m]")
 plt.xlim([-0.03, 0.03])
 plt.ylim([-30000, 30000])
-plt.savefig("Tb_max_and_min")
+plt.savefig("plots/Tb_max_and_min")
 
 
 # Bc i Hr
@@ -161,7 +161,7 @@ plt.plot(HT_mu0, M_bohr, ".", color = "black", markersize = 0.5)
 plt.grid()
 plt.xlabel("Natężęie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja próbki M [$\mu_{B}$/cząsteczkę]")
-plt.savefig("Tb_bohr")
+plt.savefig("plots/Tb_bohr")
 
 
 # Aproximation 
@@ -190,7 +190,7 @@ plt.plot(x_fit,fited_curve, "--", lw = 0.7)
 plt.grid()
 plt.xlabel("Natężęie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja próbki M [$\mu_{B}$/cząsteczkę]")
-plt.savefig("Tb_aprox")
+plt.savefig("plots/Tb_aprox")
 
 # Enegry
 
@@ -204,4 +204,4 @@ plt.plot(x_mean, Mh_diff, "b.", markersize = 1)
 plt.grid()
 plt.xlabel("Natężęie pola H${\mu_0}$ [T]")
 plt.ylabel("Magnetyzacja próbki M [A/m]")
-plt.savefig("Tb_E")
+plt.savefig("plots/Tb_E")
