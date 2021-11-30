@@ -6,7 +6,7 @@ from scipy.interpolate import Rbf, InterpolatedUnivariateSpline
 import numpy as np
 from matplotlib import pyplot as plt
 
-MH_Tb = pd.read_csv("Tb_MH.dat", sep = "\t", decimal = ',')
+MH_Tb = pd.read_csv("Tb_MH.csv", sep = "\t", decimal = ',')
 
 
 #Tb o masie 0.0898 g i gęstości 8908 kg/m3 = 8.908 g/cm3.
